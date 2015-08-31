@@ -1,10 +1,9 @@
 set number
 set so=7
 
-try
-	colorscheme desert
-catch
-endtry
+syntax enable
+set background=dark
+colorscheme solarized
 
 set nobackup
 set nowb
