@@ -1,9 +1,10 @@
 execute pathogen#infect()
+filetype plugin indent on
+syntax on
 
 set number
 set so=7
 
-syntax enable
 set background=dark
 
 set nobackup
