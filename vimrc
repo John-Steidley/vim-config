@@ -5,7 +5,6 @@ set so=7
 
 syntax enable
 set background=dark
-colorscheme solarized
 
 set nobackup
 set nowb
