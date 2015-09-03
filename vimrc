@@ -16,9 +16,20 @@ syntax enable
 
 set history=500
 set updatetime=200
-set number
 set so=7
 
 set nobackup
 set nowb
 set noswapfile
+
+set number
+set wildmenu
+set autoread
+
+" Using the mouse is disabled while learning
+" set mouse=a
+
+set backspace=eol,start,indent
+set whichwrap=<,>,h,l,[,]
+
+
