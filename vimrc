@@ -2,6 +2,7 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
@@ -13,11 +14,10 @@ filetype plugin indent on
 
 syntax enable
 
+set history=500
 set updatetime=200
 set number
 set so=7
-
-set background=dark
 
 set nobackup
 set nowb
