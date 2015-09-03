@@ -5,5 +5,7 @@ To use:
 
     cd ~
     ln -s path/to/vim-config/vimrc .vimrc
-    ln -s path/to/vim-config/vim .vim
 
+http://valloric.github.io/YouCompleteMe/#full-installation-guide
+
+Don't forget to run :PluginInstall on first startup
