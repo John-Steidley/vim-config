@@ -1,6 +1,10 @@
 # Vim Config
 This repo contains my .vimrc and other vim related files
 
+Prerequisites:
+
+    brew install vim cmake
+
 To use:
 
     cd ~
@@ -16,4 +20,8 @@ Read:
     cd ycm_build
     cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
     make ycm_support_libs
+
+Map capslock to esc
+
+    http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x
 
