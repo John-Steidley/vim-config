@@ -7,6 +7,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
+Plugin 'bling/vim-airline'
 
 call vundle#end()
 filetype plugin indent on
@@ -36,3 +37,8 @@ set backspace=eol,start,indent
 set whichwrap=<,>,h,l,[,]
 
 let g:syntastic_javascript_checkers = ['jshint', 'eslint']
+
+let g:airline_detect_modified=1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
