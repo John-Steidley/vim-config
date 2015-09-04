@@ -35,4 +35,4 @@ set autoread
 set backspace=eol,start,indent
 set whichwrap=<,>,h,l,[,]
 
-
+let g:syntastic_javascript_checkers = ['jshint', 'eslint']
