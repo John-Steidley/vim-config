@@ -5,7 +5,9 @@ To use:
 
     cd ~
     ln -s path/to/vim-config/vimrc .vimrc
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall +qall
 
-http://valloric.github.io/YouCompleteMe/#full-installation-guide
+Read:
 
-Don't forget to run :PluginInstall on first startup
+    http://valloric.github.io/YouCompleteMe/#full-installation-guide
