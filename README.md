@@ -21,6 +21,8 @@ Read:
     cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
     make ycm_support_libs
 
+Note: you can delete the ycm_build directory when you're done installing
+
 Map capslock to esc
 
     http://stackoverflow.com/questions/127591/using-caps-lock-as-esc-in-mac-os-x
