@@ -16,6 +16,11 @@ filetype plugin indent on
 
 syntax enable
 
+set spelllang=en_us
+" Toggle spell-checking with F10
+nmap <silent> <F10> :silent set spell!<CR>
+imap <silent> <F10> <C-O>:silent set spell!<CR>
+
 set history=500
 set updatetime=200
 set so=7
@@ -30,13 +35,15 @@ set number
 set wildmenu
 set autoread
 
-" Using the mouse is disabled while learning
-" set mouse=a
+set mouse=a
 
 set backspace=eol,start,indent
 set whichwrap=<,>,h,l,[,]
 
-let g:syntastic_javascript_checkers = ['jshint', 'eslint']
+" let g:syntastic_javascript_checkers = ['jshint', 'eslint', 'flow']
+let g:syntastic_javascript_checkers = ['flow']
+
+let g:gitgutter_sign_column_always = 1
 
 let g:airline_detect_modified=1
 let g:airline#extensions#tabline#enabled = 1
