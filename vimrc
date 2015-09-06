@@ -42,6 +42,8 @@ set whichwrap=<,>,h,l,[,]
 
 " let g:syntastic_javascript_checkers = ['jshint', 'eslint', 'flow']
 let g:syntastic_javascript_checkers = ['flow']
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 let g:gitgutter_sign_column_always = 1
 
