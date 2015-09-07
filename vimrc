@@ -26,7 +26,11 @@ set tabstop=2
 set shiftwidth=2
 
 set history=500
-set updatetime=200
+set updatetime=50
+set ttimeoutlen=50
+set ttyfast
+set lazyredraw
+
 set so=7
 
 set nobackup
@@ -50,6 +54,9 @@ let g:syntastic_check_on_wq = 0
 
 let g:gitgutter_sign_column_always = 1
 
+set laststatus=2
+let g:airline_left_sep=' '
+let g:airline_right_sep=' '
 let g:airline_detect_modified=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
