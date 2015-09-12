@@ -19,7 +19,7 @@ let mapleader = " "
 let g:mapleader = " "
 
 syntax enable
-set list listchars=tab:»·,trail:·,extends:…,nbsp:‗
+set list listchars=tab:»·,trail:~,extends:…,nbsp:‗
 
 set spelllang=en_us
 " Toggle spell-checking with F10
