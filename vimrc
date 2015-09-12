@@ -8,11 +8,15 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+let mapleader = " "
+let g:mapleader = " "
 
 syntax enable
 
@@ -49,7 +53,7 @@ set backspace=eol,start,indent
 set whichwrap=<,>,h,l,[,]
 
 let g:syntastic_javascript_checkers = ['jshint', 'eslint']
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 let g:gitgutter_sign_column_always = 1
@@ -60,4 +64,8 @@ let g:airline_right_sep=' '
 let g:airline_detect_modified=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+let g:ctrlp_cmd = 'CtrlP'
+:nnoremap <Tab> :bnext<CR>
+:nnoremap <S-Tab> :bprevious<CR>
 
