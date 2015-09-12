@@ -19,7 +19,7 @@ let mapleader = " "
 let g:mapleader = " "
 
 syntax enable
-set list listchars=tab:»·,trail:~,extends:…,nbsp:‗
+set list listchars=tab:»·,trail:·,extends:…,nbsp:‗
 
 set spelllang=en_us
 " Toggle spell-checking with F10
@@ -66,7 +66,8 @@ let g:airline_detect_modified=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-let g:ctrlp_cmd = 'CtrlP'
-:nnoremap <Tab> :bnext<CR>
-:nnoremap <S-Tab> :bprevious<CR>
+nnoremap <leader>t :CtrlP<CR>
+
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 
