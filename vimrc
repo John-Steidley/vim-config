@@ -44,6 +44,7 @@ set ffs=unix,dos,mac
 
 set number
 set wildmenu
+set wildignore=*/node_modules/*
 set autoread
 
 set mouse=a
