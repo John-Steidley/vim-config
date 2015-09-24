@@ -9,6 +9,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
@@ -19,7 +20,7 @@ let mapleader = " "
 let g:mapleader = " "
 
 syntax enable
-set list listchars=tab:»·,trail:·,extends:…,nbsp:‗
+set list listchars=tab:»»,trail:·,extends:…,nbsp:‗
 set cursorline
 highlight CursorLine cterm=NONE ctermbg=8
 
@@ -70,6 +71,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 nnoremap <leader>t :CtrlP<CR>
+nnoremap <leader>b :Gblame<CR>
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
