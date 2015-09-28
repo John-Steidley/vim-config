@@ -22,7 +22,7 @@ let g:mapleader = " "
 syntax enable
 set list listchars=tab:»»,trail:·,extends:…,nbsp:‗
 set cursorline
-highlight CursorLine cterm=NONE ctermbg=8
+highlight CursorLine cterm=NONE ctermbg=237
 
 set spelllang=en_us
 " Toggle spell-checking with F10
