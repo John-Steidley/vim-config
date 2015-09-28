@@ -11,17 +11,13 @@ Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-sensible'
 
 call vundle#end()
-filetype plugin indent on
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
 let mapleader = " "
 let g:mapleader = " "
 
-syntax enable
-set list listchars=tab:»»,trail:·,extends:…,nbsp:‗
 set cursorline
 highlight CursorLine cterm=NONE ctermbg=237
 
@@ -34,9 +30,6 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
-set history=500
-set updatetime=50
-set ttimeoutlen=50
 set ttyfast
 set lazyredraw
 
@@ -49,13 +42,11 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 set number
-set wildmenu
 set wildignore=*/node_modules/*
 set autoread
 
 set mouse=a
 
-set backspace=eol,start,indent
 set whichwrap=<,>,h,l,[,]
 
 let g:syntastic_javascript_checkers = ['jshint', 'eslint']
@@ -64,7 +55,6 @@ let g:syntastic_check_on_wq = 0
 
 let g:gitgutter_sign_column_always = 1
 
-set laststatus=2
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_detect_modified=1
