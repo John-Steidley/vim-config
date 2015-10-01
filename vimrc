@@ -63,6 +63,7 @@ let g:airline_powerline_fonts = 1
 
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>b :Gblame<CR>
+nnoremap <leader>w :bd<CR>
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
