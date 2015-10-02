@@ -68,3 +68,8 @@ nnoremap <leader>w :bd<CR>
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap [ []<Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
