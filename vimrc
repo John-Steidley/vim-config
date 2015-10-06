@@ -31,6 +31,9 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
+set list
+set listchars=tab:\ \ ,trail:•
+
 set ttyfast
 set lazyredraw
 
