@@ -14,6 +14,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-sensible'
 Plugin 'moll/vim-node'
+Plugin 'Raimondi/delimitMate'
 
 call vundle#end()
 
@@ -77,9 +78,3 @@ nnoremap <leader>l <C-W>l
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
-
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
-inoremap [ []<Esc>i
-inoremap " ""<Esc>i
-inoremap ' ''<Esc>i
