@@ -5,6 +5,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
@@ -68,6 +69,11 @@ let g:airline_powerline_fonts = 1
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>b :Gblame<CR>
 nnoremap <leader>w :bd<CR>
+nnoremap <leader>d :NERDTree<CR>
+nnoremap <leader>h <C-W>h
+nnoremap <leader>j <C-W>j
+nnoremap <leader>k <C-W>k
+nnoremap <leader>l <C-W>l
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
