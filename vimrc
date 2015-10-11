@@ -12,6 +12,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-sensible'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 
