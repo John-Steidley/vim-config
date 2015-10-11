@@ -30,6 +30,7 @@ set spelllang=en_us
 nmap <silent> <F10> :silent set spell!<CR>
 imap <silent> <F10> <C-O>:silent set spell!<CR>
 
+set expandtab
 set tabstop=2
 set shiftwidth=2
 
