@@ -5,6 +5,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
@@ -13,6 +14,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-sensible'
 Plugin 'rust-lang/rust.vim'
+Plugin 'moll/vim-node'
+Plugin 'Raimondi/delimitMate'
 
 call vundle#end()
 
@@ -30,6 +33,9 @@ imap <silent> <F10> <C-O>:silent set spell!<CR>
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+set list
+set listchars=tab:\ \ ,trail:•
 
 set ttyfast
 set lazyredraw
@@ -65,12 +71,11 @@ let g:airline_powerline_fonts = 1
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>b :Gblame<CR>
 nnoremap <leader>w :bd<CR>
+nnoremap <leader>d :NERDTree<CR>
+nnoremap <leader>h <C-W>h
+nnoremap <leader>j <C-W>j
+nnoremap <leader>k <C-W>k
+nnoremap <leader>l <C-W>l
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
-
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
-inoremap [ []<Esc>i
-inoremap " ""<Esc>i
-inoremap ' ''<Esc>i
