@@ -30,12 +30,10 @@ set spelllang=en_us
 nmap <silent> <F10> :silent set spell!<CR>
 imap <silent> <F10> <C-O>:silent set spell!<CR>
 
-set expandtab
 set tabstop=2
 set shiftwidth=2
 
 set list
-set listchars=tab:\ \ ,trail:•
 
 set ttyfast
 set lazyredraw
@@ -79,3 +77,12 @@ nnoremap <leader>l <C-W>l
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
+
+
+augroup configgroup
+  autocmd!
+  autocmd FileType go setlocal noexpandtab
+  autocmd FileType go setlocal listchars=tab:\ \ ,trail:•
+  autocmd FileType javascript setlocal expandtab
+  autocmd FileType javascript setlocal listchars=tab:>\ ,trail:•
+augroup END
