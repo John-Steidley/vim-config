@@ -34,6 +34,7 @@ set tabstop=2
 set shiftwidth=2
 
 set list
+set listchars=tab:>\ ,trail:•
 
 set ttyfast
 set lazyredraw
@@ -84,5 +85,4 @@ augroup configgroup
   autocmd FileType go setlocal noexpandtab
   autocmd FileType go setlocal listchars=tab:\ \ ,trail:•
   autocmd FileType javascript setlocal expandtab
-  autocmd FileType javascript setlocal listchars=tab:>\ ,trail:•
 augroup END
