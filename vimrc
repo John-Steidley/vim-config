@@ -67,6 +67,8 @@ let g:airline_detect_modified=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>b :Gblame<CR>
 nnoremap <leader>w :bd<CR>
@@ -78,7 +80,6 @@ nnoremap <leader>l <C-W>l
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
-
 
 augroup configgroup
   autocmd!
