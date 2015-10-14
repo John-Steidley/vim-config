@@ -3,7 +3,7 @@ This repo contains my .vimrc and other vim related files
 
 Prerequisites:
 
-    brew install vim cmake
+    brew install vim cmake the_silver_searcher
 
 To use:
 

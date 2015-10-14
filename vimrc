@@ -13,6 +13,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-sensible'
+Plugin 'rust-lang/rust.vim'
 Plugin 'moll/vim-node'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-commentary'
@@ -30,12 +31,11 @@ set spelllang=en_us
 nmap <silent> <F10> :silent set spell!<CR>
 imap <silent> <F10> <C-O>:silent set spell!<CR>
 
-set expandtab
 set tabstop=2
 set shiftwidth=2
 
 set list
-set listchars=tab:\ \ ,trail:•
+set listchars=tab:>\ ,trail:•
 
 set ttyfast
 set lazyredraw
@@ -68,6 +68,8 @@ let g:airline_detect_modified=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>b :Gblame<CR>
 nnoremap <leader>w :bd<CR>
@@ -79,3 +81,10 @@ nnoremap <leader>l <C-W>l
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
+
+augroup configgroup
+  autocmd!
+  autocmd FileType go setlocal noexpandtab
+  autocmd FileType go setlocal listchars=tab:\ \ ,trail:•
+  autocmd FileType javascript setlocal expandtab
+augroup END
