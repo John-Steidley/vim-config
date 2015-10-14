@@ -15,6 +15,7 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-sensible'
 Plugin 'moll/vim-node'
 Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-commentary'
 
 call vundle#end()
 
