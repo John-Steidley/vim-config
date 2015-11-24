@@ -16,6 +16,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'rust-lang/rust.vim'
 Plugin 'moll/vim-node'
 Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-commentary'
 
 call vundle#end()
 
@@ -78,6 +79,10 @@ nnoremap <leader>h <C-W>h
 nnoremap <leader>j <C-W>j
 nnoremap <leader>k <C-W>k
 nnoremap <leader>l <C-W>l
+
+vnoremap <C-c> "+y
+inoremap <C-v> "+p
+nnoremap <C-v> "+p
 
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
