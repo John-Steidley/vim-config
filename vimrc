@@ -14,7 +14,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-sensible'
 Plugin 'rust-lang/rust.vim'
-Plugin 'Chiel92/vim-autoformat'
 Plugin 'moll/vim-node'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-commentary'
@@ -71,10 +70,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-
-let g:formatdef_rustfmt = '"rustfmt"'
-let g:formatters_rust = ['rustfmt']
-au BufWrite * :Autoformat
 
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>b :Gblame<CR>
