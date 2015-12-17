@@ -57,6 +57,7 @@ set mouse=a
 set whichwrap=<,>,h,l,[,]
 
 let g:syntastic_javascript_checkers = ['jshint', 'eslint']
+let g:syntastic_go_checkers = ['govet', 'errcheck']
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
@@ -70,6 +71,13 @@ let g:airline_powerline_fonts = 1
 
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
+let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
 nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>b :Gblame<CR>
 nnoremap <leader>w :bd<CR>
@@ -79,12 +87,13 @@ nnoremap <leader>j <C-W>j
 nnoremap <leader>k <C-W>k
 nnoremap <leader>l <C-W>l
 
+cnoreabbrev Wq wq
+
 vnoremap <C-c> "+y
 inoremap <C-v> "+p
 nnoremap <C-v> "+p
 
 nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
 
 augroup configgroup
   autocmd!
