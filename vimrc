@@ -31,7 +31,6 @@ set spelllang=en_us
 nmap <silent> <F10> :silent set spell!<CR>
 imap <silent> <F10> <C-O>:silent set spell!<CR>
 
-set expandtab
 set tabstop=2
 set shiftwidth=2
 
@@ -95,6 +94,8 @@ inoremap <C-v> "+p
 nnoremap <C-v> "+p
 
 nnoremap <Tab> :bnext<CR>
+
+command ReplaceSmartQuotes :%s/”/"/g | :%s/“/"/g
 
 augroup configgroup
   autocmd!
