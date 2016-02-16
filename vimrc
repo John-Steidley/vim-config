@@ -94,6 +94,7 @@ inoremap <C-v> "+p
 nnoremap <C-v> "+p
 
 nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprev<CR>
 
 command ReplaceSmartQuotes :%s/”/"/g | :%s/“/"/g
 
