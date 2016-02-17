@@ -89,10 +89,6 @@ nnoremap <leader>l <C-W>l
 
 cnoreabbrev Wq wq
 
-vnoremap <C-c> "+y
-inoremap <C-v> "+p
-nnoremap <C-v> "+p
-
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprev<CR>
 
