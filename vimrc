@@ -57,7 +57,7 @@ set mouse=a
 set whichwrap=<,>,h,l,[,]
 
 let g:syntastic_javascript_checkers = ['jshint', 'eslint']
-let g:syntastic_go_checkers = ['govet', 'errcheck']
+let g:syntastic_go_checkers = ['govet', 'golint']
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
