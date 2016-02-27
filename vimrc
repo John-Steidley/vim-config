@@ -31,7 +31,6 @@ set spelllang=en_us
 nmap <silent> <F10> :silent set spell!<CR>
 imap <silent> <F10> <C-O>:silent set spell!<CR>
 
-set expandtab
 set tabstop=2
 set shiftwidth=2
 
@@ -58,7 +57,7 @@ set mouse=a
 set whichwrap=<,>,h,l,[,]
 
 let g:syntastic_javascript_checkers = ['jshint', 'eslint']
-let g:syntastic_go_checkers = ['govet', 'errcheck']
+let g:syntastic_go_checkers = ['govet', 'golint']
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
@@ -90,8 +89,14 @@ nnoremap <leader>l <C-W>l
 
 cnoreabbrev Wq wq
 
-vnoremap <C-c> "+y
-inoremap <C-v> "+p
-nnoremap <C-v> "+p
-
 nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprev<CR>
+
+command ReplaceSmartQuotes :%s/”/"/g | :%s/“/"/g
+
+augroup configgroup
+  autocmd!
+  autocmd FileType go setlocal noexpandtab
+  autocmd FileType go setlocal listchars=tab:\ \ ,trail:•
+  autocmd FileType javascript setlocal expandtab
+augroup END
