@@ -95,10 +95,3 @@ inoremap <C-v> "+p
 nnoremap <C-v> "+p
 
 nnoremap <Tab> :bnext<CR>
-
-augroup configgroup
-  autocmd!
-  autocmd FileType go setlocal noexpandtab
-  autocmd FileType go setlocal listchars=tab:\ \ ,trail:•
-  autocmd FileType javascript setlocal expandtab
-augroup END
