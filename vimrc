@@ -46,7 +46,7 @@ set nobackup
 set nowb
 set noswapfile
 set encoding=utf8
-set ffs=unix,dos,mac
+set ffs=unix,dos
 
 set number
 set wildignore=*/node_modules/*
