@@ -4,16 +4,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-sensible'
-Plugin 'rust-lang/rust.vim'
-Plugin 'moll/vim-node'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-commentary'
 
@@ -60,7 +55,7 @@ let g:syntastic_go_checkers = ['govet', 'golint']
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
